@@ -2974,7 +2974,7 @@
 		)
 		(uuid "62b2b23e-ed3d-4ccf-83dd-0734dc3d53db")
 	)
-	(label "~{RAMCE"
+	(label "~{RAMCE}"
 		(at 114.3 104.14 180)
 		(effects
 			(font
@@ -3274,7 +3274,7 @@
 		)
 		(uuid "c63504ca-00c7-4e86-b91f-9373cc2e3368")
 	)
-	(label "~{RAMCE"
+	(label "~{RAMCE}"
 		(at 170.18 91.44 180)
 		(effects
 			(font
