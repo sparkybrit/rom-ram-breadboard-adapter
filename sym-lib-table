@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "sparky1_modules")(type "KiCad")(uri "${KIPRJMOD}/lib/sparky1-modules/sparky1_modules.kicad_sym")(options "")(descr ""))
+)
