@@ -1,1 +1,3 @@
 *-backups
+# KiCad per-user view settings
+*.kicad_prl
