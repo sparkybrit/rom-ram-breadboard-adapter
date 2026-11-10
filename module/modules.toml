@@ -1,0 +1,18 @@
+# This board as a module of a larger schematic (Sparky1's): one KiCad symbol whose pins are its
+# connector pins, read from this repo's schematic, through kicad-cli.
+# Edit this file or the source, then `make -C module`; `make -C module check` fails if the
+# symbol and the source disagree. module/interfaces/ and the .kicad_sym are generated.
+# The keys are described in lib/kicad-tools/README.md.
+
+library = "rom-ram-breadboard-adapter"
+keywords = "sparky1 module interface"
+
+[ROM_RAM_ADAPTER]
+description = "ROM/RAM breadboard adapter: the DS1250AB-70 NVRAM sits in U1, the wide 32-pin socket drawn for an SST39SF040 flash; U2 (CY7C199, narrow DIP-28) is not fitted. Pin names are the board's, for the flash: U1 pin 29, the DS1250's /WE, is J1's A14, and pin 31, its A15, is J2's ROMWE (A14/A15 also swap on pin 3)"
+repo = "https://github.com/sparkybrit/rom-ram-breadboard-adapter"
+path = ".."
+schematic = "flash-breadboard-adaptor.kicad_sch"
+connectors = ["J1", "J2"]
+names = { J1 = "J1 address", J2 = "J2 data, control" }
+# J1 and J2 run the same way, pin 1 at the bottom: A0 bottom right.
+sides = { left = ["J2:20-1"], right = ["J1:20-1"] }
